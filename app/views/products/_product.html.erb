@@ -21,9 +21,10 @@
     <%= humanized_money_with_symbol product.price %>
   </aside>
 
-  <% if (product.quantity == 0 ) %>
+  <% if (product.quantity == 0) %>
     <aside class="sold_out_tag">
       <h5>SOLD OUT!</h5>
     </aside>
   <% end %>
+
 </article>
