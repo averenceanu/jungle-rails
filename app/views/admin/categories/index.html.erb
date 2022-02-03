@@ -1,0 +1,25 @@
+<header class="page-header">
+  <h1>Admin &raquo; All Categories</h1>
+</header>
+
+<section>
+  <div class="panel panel-default products">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th> 
+            <h2><b>Create a new category<b></h2>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |category| %>
+          <tr>
+            <th><%= category.name %></th>
+            <th><%= category.created_at %></th>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</section>
