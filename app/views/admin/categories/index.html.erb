@@ -2,13 +2,17 @@
   <h1>Admin &raquo; All Categories</h1>
 </header>
 
+<div class="well">
+  <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+</div>
+
 <section>
   <div class="panel panel-default products">
     <table class="table table-bordered">
       <thead>
         <tr>
           <th> 
-            <h2><b>Create a new category<b></h2>
+            <h2><b>Current Categories<b></h2>
           </th>
         </tr>
       </thead>
@@ -16,7 +20,6 @@
         <% @categories.each do |category| %>
           <tr>
             <th><%= category.name %></th>
-            <th><%= category.created_at %></th>
           </tr>
         <% end %>
       </tbody>
